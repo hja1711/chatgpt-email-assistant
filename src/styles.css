@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --bg-color: #181818;
+  --text-color: #e0e0e0;
+  --box-color: #252526;
+  --border-color: #3a3a3a;
+  --button-bg: #3f51b5;
+  --button-hover: #5c6bc0;
+  --input-bg: #2a2a2a;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  max-width: 1600px;
+  height: 85vh;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Linke & rechte Spalte */
+.column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+}
+
+.box {
+  background: var(--box-color);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 50vh; /* Verhindert, dass die Box zu weit nach unten geht */
+}
+
+/* Drag & Drop Upload */
+.upload-container {
+  height: 20%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px dashed var(--border-color);
+}
+
+.file-upload {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.file-upload:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.file-upload p {
+  color: #ddd;
+}
+
+.upload-container p {
+  margin: 5px 0;
+}
+
+/* Textfelder */
+textarea {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  background: var(--button-bg);
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: var(--button-hover);
+}

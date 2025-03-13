@@ -1,0 +1,12 @@
+chatgpt-email-assistant/
+├─ backend/  <-- später für API
+├─ src/
+│  ├─ components/
+│  │  ├─ UploadForm.jsx  <-- Upload & Anzeige der E-Mail
+│  │  ├─ ResponseEditor.jsx  <-- Bearbeiten der Antwort
+│  │  ├─ ChatGPTService.js  <-- API-Anbindung
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  ├─ styles.css
+├─ public/
+├─ package.json

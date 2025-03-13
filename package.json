@@ -1,0 +1,24 @@
+{
+  "name": "chatgpt-email-assistant",
+  "version": "1.0.0",
+  "description": "Ein AI-gestützter E-Mail-Assistent",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "emailjs-mime-parser": "^2.0.7",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-dropzone": "^14.3.8",
+    "tailwindcss": "^4.0.13"
+  },
+  "devDependencies": {
+    "vite": "^6.2.1"
+  }
+}
